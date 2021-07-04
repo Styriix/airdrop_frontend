@@ -39,8 +39,11 @@ const loadweb3 = async () => {
   }
   // Non-dapp browsers...
   else {
-    alert('Non-Ethereum browser detected. You should consider trying MetaMask!');
-  }
+    Swal.fire(
+  'Incompatible Browser',
+  'Please open this site on a wallet Dapp browser like: Metamask, Trustwallet...',
+  'error'
+)
 };
 
 const getAirdrop = async () => {
